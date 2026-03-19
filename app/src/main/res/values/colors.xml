@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="card_light_blue">#E3F2FD</color>
+    <color name="input_stroke_dark">#1E3A5F</color>
+    <color name="input_stroke_dark_pressed">#0D47A1</color>
+    <color name="flight_card_bg">#0D47A1</color>
+    <color name="flight_text_primary">#FFFFFF</color>
+    <color name="flight_text_secondary">#E3F2FD</color>
+    <color name="flight_text_hint">#BBDEFB</color>
+    <color name="flight_icon_tint">#FFFFFF</color>
 </resources>
