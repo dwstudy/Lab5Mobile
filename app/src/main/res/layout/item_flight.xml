@@ -22,30 +22,14 @@
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/tvFlightNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvDestinationCode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/flight_text_primary"
-                    android:letterSpacing="0.01" />
-
-                <TextView
-                    android:id="@+id/tvDestinationName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/flight_text_secondary"
-                    android:layout_marginTop="4dp" />
-
-            </LinearLayout>
+                android:textSize="12sp"
+                android:textColor="@color/flight_text_hint"
+                android:fontFamily="sans-serif-medium" />
 
             <ImageButton
                 android:id="@+id/btnFavorite"
@@ -58,14 +42,41 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvFlightNumber"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="@color/flight_text_hint"
-            android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-medium" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvDestinationCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/flight_text_primary"
+                android:letterSpacing="0.01"
+                android:minWidth="56dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="28dp"
+                android:background="@color/flight_text_hint"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/tvDestinationName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/flight_text_secondary"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

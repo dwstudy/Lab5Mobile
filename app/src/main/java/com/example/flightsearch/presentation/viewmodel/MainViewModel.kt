@@ -70,7 +70,7 @@ class MainViewModel(
                 }
             }
         }
-        
+
         viewModelScope.launch {
             getFavoriteFlightsUseCase().collect { favorites ->
                 if (_isShowingFavorites.value) {
